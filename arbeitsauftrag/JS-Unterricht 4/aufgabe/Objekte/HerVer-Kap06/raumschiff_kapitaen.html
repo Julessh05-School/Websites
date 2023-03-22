@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Objekt, Instanzen, Eigenschaften und Methoden</title>
+</head>
+<body>
+  <h3>Die Kapitäne der Raumschiffe</h3>
+  <script type="text/javascript">
+
+    function Raumschiff(name, modell, kapitaen)
+    {
+      this.name = name;
+      this.modell = modell;
+      this.kapitaen = kapitaen;
+    }
+
+    function Person(name, vorname, geschlecht, lebensform)
+    {
+      this.name = name;
+      this.vorname = vorname;
+      this.geschlecht = geschlecht;
+      this.lebensform = lebensform;
+    }
+
+    var k1 = new Person("Kirk", "James Tiberius", "männlich", "Mensch");
+    var enterprise = new Raumschiff("U.S.S. Enterprise", "NCC-1701", k1);
+    document.write("<br />",enterprise.name, " ", enterprise.modell);
+    document.write("<br />Kapitän: ", enterprise.kapitaen.vorname, " ", enterprise.kapitaen.name, ", ", enterprise.kapitaen.geschlecht);
+    document.write("<br />lebensform: ", enterprise.kapitaen.lebensform);
+
+    var k2 = new Person("Janeway", "Kathryn", "weiblich", "Mensch");
+    var voyager = new Raumschiff("U.S.S. Voyager", "NCC-74656", k2);
+    document.write("<br />",voyager.name, " ",voyager.modell);
+    document.write("<br />Kapitän: ",voyager.kapitaen.vorname, " ",voyager.kapitaen.name, ", ",voyager.kapitaen.geschlecht);
+    document.write("<br />lebensform: ",voyager.kapitaen.lebensform);
+
+  </script>
+</body>
+</html>

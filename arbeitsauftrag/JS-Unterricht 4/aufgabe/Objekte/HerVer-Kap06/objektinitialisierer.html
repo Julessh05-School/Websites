@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">Objektinitilisierer</title>
+</head>
+<body>
+ <h3>Objektinitilisierer</h3>
+ <script type="text/javascript">
+
+   var objVar = { eigenschaft1: "Wert1",
+                  eigenschaft2: "Wert2",
+                  methode1: new function () { }
+                };
+   document.write('eigenschaft1 hat den Wert ' + objVar.eigenschaft1 + '<br />');
+   document.write('eigenschaft2 hat den Wert ' + objVar.eigenschaft2 + '<br />');
+   document.write('methode1 liefert das Ergebnis ' + objVar.methode1 + '<br />');
+
+  </script>
+</body>
+</html>
