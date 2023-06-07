@@ -17,7 +17,6 @@
             } else if ($name == '') {
                 echo 'Please enter a name';
             }
-            echo "Your name is: $name";
         ?>
     </body>
 </html>
