@@ -10,11 +10,6 @@
     <h1>Mitternachtsformel</h1>
     <?php
 
-        /*
-            Autor: Max Mustermann
-            erstellt am: 19.01.2023
-        */
-
         // Wertzuweisung
         $a = $_GET['a'];
         $b = $_GET['b']; 
@@ -25,13 +20,6 @@
         $steps = $_GET['steps'];
 
         $radikand = $b*$b - 4*$a*$c;
-        
-        /*
-        Wichtig!!!
-        Die Bedeutung von "sqrt()" habe ich auf der 
-        Seite https://www.php.net/manual/de/function.sqrt.php 
-        nachgeschlagen
-        */
 
         $x1 = (-$b + sqrt($radikand)) / (2*$a);
 
